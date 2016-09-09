@@ -20,18 +20,19 @@ public class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction public func startTimer(sender: AnyObject) {
+    @IBAction public func startTimer() {
         running = true
     }
     
-    @IBAction public func stopTimer(sender: AnyObject) {
+    @IBAction public func stopTimer() {
         running = false
     }
-    
-    @IBAction public func resetTimer(sender: AnyObject) {
+
+    @IBAction func resetTimer() {
         seconds = 0.00
         displayTime(TimerLabel)
     }
+    
     
     func scheduledTimerWithTimeInterval(){
         let timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(self.tick), userInfo: nil, repeats: true)
