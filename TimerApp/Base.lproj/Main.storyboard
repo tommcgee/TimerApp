@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0:0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKJ-3X-XuM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0:0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKJ-3X-XuM" customClass="TimerLabelView" customModule="TimerApp" customModuleProvider="target">
                                 <rect key="frame" x="278" y="94" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -27,7 +27,7 @@
                                 <rect key="frame" x="281" y="242" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
-                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oq5-st-eZZ"/>
+                                    <action selector="resetTimer" destination="BYZ-38-t0r" eventType="touchUpInside" id="7x9-o3-afB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB6-Sd-KUT">
@@ -36,7 +36,7 @@
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQH-ta-u5Q"/>
+                                    <action selector="startTimer" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wm7-x5-ySp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeY-LE-bzo">
@@ -45,7 +45,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="stopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AE-z9-0PC"/>
+                                    <action selector="stopTimer" destination="BYZ-38-t0r" eventType="touchUpInside" id="24u-ca-b1w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,7 +62,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="TimerLabel" destination="pKJ-3X-XuM" id="6Hi-dB-T2g"/>
+                        <outlet property="timer" destination="pKJ-3X-XuM" id="21Z-79-Q90"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

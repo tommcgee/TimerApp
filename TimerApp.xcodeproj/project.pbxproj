@@ -14,6 +14,10 @@
 		E206DF551D82F20000504B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E206DF541D82F20000504B2F /* Assets.xcassets */; };
 		E206DF581D82F20000504B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E206DF561D82F20000504B2F /* LaunchScreen.storyboard */; };
 		E206DF631D82F20000504B2F /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206DF621D82F20000504B2F /* ViewControllerSpec.swift */; };
+		E206DF6E1D83074400504B2F /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206DF6D1D83074400504B2F /* TimerView.swift */; };
+		E206DF701D83081A00504B2F /* TimerLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206DF6F1D83081A00504B2F /* TimerLabelView.swift */; };
+		E206DF721D830A7000504B2F /* TimerLabelViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206DF711D830A7000504B2F /* TimerLabelViewSpec.swift */; };
+		E206DF741D830CE800504B2F /* MockTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206DF731D830CE800504B2F /* MockTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		E206DF5E1D82F20000504B2F /* TimerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E206DF621D82F20000504B2F /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		E206DF641D82F20000504B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E206DF6D1D83074400504B2F /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		E206DF6F1D83081A00504B2F /* TimerLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerLabelView.swift; sourceTree = "<group>"; };
+		E206DF711D830A7000504B2F /* TimerLabelViewSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerLabelViewSpec.swift; sourceTree = "<group>"; };
+		E206DF731D830CE800504B2F /* MockTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockTimerView.swift; path = ../TimerApp/MockTimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,8 @@
 				E206DF541D82F20000504B2F /* Assets.xcassets */,
 				E206DF561D82F20000504B2F /* LaunchScreen.storyboard */,
 				E206DF591D82F20000504B2F /* Info.plist */,
+				E206DF6D1D83074400504B2F /* TimerView.swift */,
+				E206DF6F1D83081A00504B2F /* TimerLabelView.swift */,
 			);
 			path = TimerApp;
 			sourceTree = "<group>";
@@ -105,8 +115,10 @@
 		E206DF611D82F20000504B2F /* TimerAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				E206DF731D830CE800504B2F /* MockTimerView.swift */,
 				E206DF621D82F20000504B2F /* ViewControllerSpec.swift */,
 				E206DF641D82F20000504B2F /* Info.plist */,
+				E206DF711D830A7000504B2F /* TimerLabelViewSpec.swift */,
 			);
 			path = TimerAppTests;
 			sourceTree = "<group>";
@@ -272,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E206DF6E1D83074400504B2F /* TimerView.swift in Sources */,
 				E206DF501D82F20000504B2F /* ViewController.swift in Sources */,
 				E206DF4E1D82F20000504B2F /* AppDelegate.swift in Sources */,
+				E206DF741D830CE800504B2F /* MockTimerView.swift in Sources */,
+				E206DF701D83081A00504B2F /* TimerLabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E206DF721D830A7000504B2F /* TimerLabelViewSpec.swift in Sources */,
 				E206DF631D82F20000504B2F /* ViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
