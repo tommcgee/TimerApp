@@ -28,7 +28,7 @@ public class ViewController: UIViewController {
         running = false
     }
 
-    @IBAction func resetTimer() {
+    @IBAction public func resetTimer() {
         seconds = 0.00
         displayTime(TimerLabel)
     }

@@ -6,7 +6,6 @@ import UIKit
 class ViewControllerSpec: QuickSpec {
     override func spec() {
         var controller: ViewController!
-        let sampleButton = UIButton()
         beforeEach() {
             controller = ViewController()
         }
@@ -14,7 +13,7 @@ class ViewControllerSpec: QuickSpec {
         describe("ViewController") {
             
             it ("can set running to true when the timer is started") {
-                controller.startTimer(sampleButton)
+                controller.startTimer()
                 expect(controller.running).to(beTrue())
             }
             
@@ -25,7 +24,7 @@ class ViewControllerSpec: QuickSpec {
             
             it ("can set stop the timer from running") {
                 controller.running = true
-                controller.stopTimer(sampleButton)
+                controller.stopTimer()
                 expect(controller.running).to(beFalse())
             }
             
@@ -82,7 +81,7 @@ class ViewControllerSpec: QuickSpec {
                 label.text = "1:23.3"
                 controller.TimerLabel = label
                 
-                controller.resetTimer(label)
+                controller.resetTimer()
                 expect(label.text!).to(equal("0:0.0"))
             }
             
